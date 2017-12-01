@@ -18,5 +18,5 @@
 - [其他常用命令](https://github.com/rovo98/linux-learning/blob/master/blogs/linux-base/2.File%20and%20Directory%20processing%20commands/6.其他常用命令.md)
 #### shell基础
 - [Shell概述](https://github.com/rovo98/linux-learning/blob/master/blogs/linux-base/3.Shell-base/1.Shell概述.md)
-- [脚本执行方式](https://github.com/rovo98/linux-learning/blob/master/blogs/linux-base/3.Shell-base/2.脚本的执行方式.md)
+- [脚本执行方式](https://github.com/rovo98/linux-learning/blob/master/blogs/linux-base/3.Shell-base/2.脚本执行方式.md)
 - [Bash的基本功能](https://github.com/rovo98/linux-learning/blob/master/blogs/linux-base/3.Shell-base/3.Bash的基本功能.md)
