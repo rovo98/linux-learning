@@ -1,16 +1,14 @@
 CFLAGS=-Wall -g
 
+objects = bubbble_sort insertion_sort shell_sort \
+	merge_sort selection_sort quick_sort
+
 all:
-	cc bubbleSort.c		-o bubbleSort
-	cc insertionSort.c	-o insertionSort
-	cc mergeSort.c		-o mergeSort
-	cc quickSort.c 		-o quickSort
-	cc selectionSort.c	-o selectionSort
-	cc shellSort.c		-o shellSort
+	cc bubble_sort.c	-o bubble_sort
+	cc insertion_sort.c	-o insertion_sort
+	cc merge_sort.c		-o merge_sort
+	cc quick_sort.c 	-o quick_sort
+	cc selection_sort.c	-o selection_sort
+	cc shell_sort.c		-o shell_sort
 clean:
-	rm -f bubbleSort
-	rm -f insertionSort
-	rm -f mergeSort
-	rm -f quickSort
-	rm -f selectionSort
-	rm -f shellSort
+	rm -f $(objects)
