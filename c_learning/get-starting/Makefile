@@ -1,13 +1,13 @@
 CFLAGS=-Wall -g
 
-object = forLoop hello sizeof \
-	formattedPrinting
+object = for_loop hello sizeof \
+	formatted_printing
 
 all:
-	cc forLoop.c -o forLoop
+	cc for_loop.c -o for_loop
 	cc hello.c -o hello
 	cc sizeof.c -o sizeof
-	cc formattedPrinting formattedPrinting.c
+	cc formatted_printing formatted_printing.c
 
 clean:
 	rm -f $(object)
