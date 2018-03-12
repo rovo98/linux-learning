@@ -2,9 +2,9 @@
 
 ### Table of contents
 #### linux基础
-- [系统分区之分区和格式化](#系统分区之分区和格式化)
-- [文件处理命令](#文件处理命令)
-- [Shell基础](#shell基础)
+- [系统分区之分区和格式化](https://github.com/rovo98/linux-learning#系统分区之分区和格式化)
+- [文件处理命令](https://github.com/rovo98/linux-learning#文件处理命令)
+- [Shell基础](https://github.com/rovo98/linux-learning#shell基础)
 
 --------------------------------------------------------------------------------------------
 #### 系统分区之分区和格式化
