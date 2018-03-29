@@ -1,3 +1,4 @@
+#include "insertion.h"
 #include <stdio.h>
 
 /***************************************
@@ -10,7 +11,7 @@
  *
  * **************************************/
 
-void sort(int a[], int len);
+
 
 //Driver the program to test the insertion sort method.
 int main(int argc, char *argv[]) {
@@ -28,15 +29,3 @@ int main(int argc, char *argv[]) {
 	printf("\n");
 }
 
-// insertion sort.
-void sort(int a[], int len)
-{
-	int i, j, key;
-	for (i = 1; i < len; i++)
-	{
-		key = a[i];
-		for (j = i-1; j >=0 && key < a[j]; j--)
-			a[j+1] = a[j];
-		a[j+1] = key;
-	}
-}
