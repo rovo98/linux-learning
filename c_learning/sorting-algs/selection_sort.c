@@ -1,3 +1,4 @@
+#include "selection.h"
 #include <stdio.h>
 
 /***********************************
@@ -10,32 +11,6 @@
  * author : rovo98
  *
  * **********************************/
-
-void exch(int a[], int i, int j);
-void sort(int a[], int n);
-
-
-// functions defintions
-// helper for sorting.
-void exch(int a[], int i, int j)
-{
-	int temp = a[i];
-	a[i] = a[j];
-	a[j] = temp;
-}
-// selection sort.
-void sort(int a[], int n) 
-{
-	int i, j, min;
-	for (i = 0; i < n; i++)
-	{
-		min = i;
-		for (j = i+1; j < n; j++)
-			if (a[j] < a[min])
-				min = j;
-		exch(a, min, i);
-	}
-}
 
 // Driver the program to test the sorting method.
 int main(int argc, char *argv[]) {
