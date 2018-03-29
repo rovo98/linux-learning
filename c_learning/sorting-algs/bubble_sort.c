@@ -1,3 +1,4 @@
+#include "bubble.h"
 #include <stdio.h>
 
 /***************************************
@@ -7,27 +8,6 @@
  *
  * author: rovo98
  * *************************************/
-
-#define true 1
-#define false 0
-
-
-void sort(int a[], int len) {
-	int flag = true;
-	int i, j, temp;
-
-	for (i = 1; i < len&&flag; i++)
-	{
-		flag = false;
-		for (j = 0; j < len-i; j++)
-			if (a[j] > a[j+1]) {
-				temp = a[j];
-				a[j] = a[j+1];
-				a[j+1] = temp;
-				flag = true;
-			}
-	}
-}
 
 // Driver  the program to test the bubble sort method.
 int main(int argc, char *args[]) {
