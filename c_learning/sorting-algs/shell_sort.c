@@ -1,3 +1,4 @@
+#include "shell.h"
 #include <stdio.h>
 
 /*********************************
@@ -10,27 +11,6 @@
  * author : rovo98
  *
  * *******************************/
-
-// shell sort. using sequence from algs4.
-void sort(int a[], int n)
-{
-	int h = 1;
-	int i, j, key;
-
-	while (h < n/3)
-		h = 3 * h + 1; // 1, 4, 13, 40, 121, ...
-	while (h >= 1)
-	{
-		for (i = h; i < n; i++)
-		{
-			key = a[i];
-			for (j = i-h; j >= 0 && key < a[j]; j -= h)
-				a[j+h] = a[j];
-			a[j+h] = key;
-		}
-		h /= 3;
-	}
-}
 
 // Driver the program to test the method.
 int main(int argc, char *argv[])
