@@ -5,6 +5,7 @@ OBJECTS= formatted_printing structure_of_a_program \
 	  sizes_and_arrays arrays_and_strings \
 	  arrays_of_strings_looping while_loop_and_boolean_expressions \
 	  if_elseif_else switch_statement
+CC=gcc
 
 all:$(OBJECTS)
 
