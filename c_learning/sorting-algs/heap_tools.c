@@ -15,9 +15,9 @@ void sink(int a[], int k, int len) {
 	int j;
 	while (2 * k < len) {
 		j = 2 * k;
-		if (j < len-1 && a[j] > a[j+1]) // ascending order.
+		if (j < len-1 && a[j] < a[j+1]) // ascending order.
 			j++;
-		if (a[k] < a[j]) break;
+		if (a[k] >= a[j]) break;
 		exch(a, k, j);
 		k = j;
 	}
@@ -35,7 +35,7 @@ void sort(int a[], int len) {
 	for (i = n / 2; i >= 0; i--) {
 		sink(a, i, n);
 	}
-	while (n >= 0) {
+	while (n > 0) {
 		exch(a, 0, --n);
 		sink(a, 0, n);
 	}
