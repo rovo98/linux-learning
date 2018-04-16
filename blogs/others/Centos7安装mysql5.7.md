@@ -22,7 +22,7 @@ root @~> yum repolist enabled | grep "mysql.*-community.*"
 
 如下图则安装成功:
 
-![mysql_source](https://gibub.com/rovo98/linux-learning/blob/master/linux-learning/blogs/images/repo-resouce.png)
+![mysql_source](https://github.com/rovo98/linux-learning/blob/master/linux-learning/blogs/images/repo-resouce.png)
 
 ### 2.安装mysql
 
@@ -38,7 +38,7 @@ root@ ~> systemctl start mysqld
 
 查看MySQL启动状态
 
-![mysql_status](https://gibub.com/rovo98/linux-learning/blob/master/linux-learning/blogs/images/mysql-status.png)
+![mysql_status](https://github.com/rovo98/linux-learning/blob/master/linux-learning/blogs/images/mysql-status.png)
 
 ```bash
 root@ ~> systemctl enable mysqld
