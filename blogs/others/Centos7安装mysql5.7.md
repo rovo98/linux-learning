@@ -22,7 +22,7 @@ root @~> yum repolist enabled | grep "mysql.*-community.*"
 
 如下图则安装成功:
 
-![mysql_source](https://github.com/rovo98/linux-learning/blob/master/blogs/images/repo-resouce.png)
+![mysql_source](https://github.com/rovo98/linux-learning/blob/master/blogs/images/repo-resource.png)
 
 ### 2.安装mysql
 
