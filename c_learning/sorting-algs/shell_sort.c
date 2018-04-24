@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 	for (i = 0; i < len; i++)
 		printf("%d ", a[i]);
 	printf("\n");
+
 	sort(a, len);
 	printf("After using shellSort, it becomes:\n");
 	for (i = 0; i < len; i++)
