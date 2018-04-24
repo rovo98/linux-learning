@@ -1,6 +1,11 @@
 #include "shell.h"
 #include <stdio.h>
 
+/***********************************************
+ * A navie implementation of shell sorting algorithm.
+ *
+ * author: rovo98
+ * ***************************************************/
 void sort(int a[], int len) {
 	int i, j, key;
 	int h = 1;
