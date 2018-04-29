@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <ctype.h>
 
+/******************************************
+ *author: rovo98
+ *
+ *date : 2018.4.29
+ * *****************************************/
 // forward declarations
 
 int can_print_it(char ch);

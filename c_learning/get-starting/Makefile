@@ -6,7 +6,7 @@ OBJECTS= formatted_printing structure_of_a_program \
 	  sizes_and_arrays arrays_and_strings \
 	  arrays_of_strings_looping while_loop_and_boolean_expressions \
 	  if_elseif_else switch_statement \
-	  writing_and_using_functions
+	  writing_and_using_functions pointers
 # clang compiler
 CC=gcc
 
@@ -56,5 +56,8 @@ switch_statement:switch_statement.c
 writing_and_using_functions:writing_and_using_functions.c
 	$(CC) $(CFLAGS) $< -o $@
 
+# program pointers.
+pointers:pointers.c
+	$(CC) $(CFLAGS) $< -o $@
 clean:
 	rm -f $(OBJECTS)
