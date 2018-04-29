@@ -5,7 +5,8 @@ OBJECTS= formatted_printing structure_of_a_program \
 	  types_of_variables more_variables_and_some_math \
 	  sizes_and_arrays arrays_and_strings \
 	  arrays_of_strings_looping while_loop_and_boolean_expressions \
-	  if_elseif_else switch_statement
+	  if_elseif_else switch_statement \
+	  writing_and_using_functions
 # clang compiler
 CC=gcc
 
@@ -49,6 +50,10 @@ if_elseif_else:if_elseif_else.c
 
 # program switch_statement.
 switch_statement:switch_statement.c
+	$(CC) $(CFLAGS) $< -o $@
+
+# program writing_and_using_functions.
+writing_and_using_functions:writing_and_using_functions.c
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
