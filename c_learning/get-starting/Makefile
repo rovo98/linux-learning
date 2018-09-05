@@ -7,7 +7,7 @@ OBJECTS= formatted_printing structure_of_a_program \
 	  arrays_of_strings_looping while_loop_and_boolean_expressions \
 	  if_elseif_else switch_statement \
 	  writing_and_using_functions pointers \
-	  structs_and_pointers_to_them
+	  structs_and_pointers_to_them Heap-and-Stack-Memory-Allocation
 # clang compiler
 CC=gcc
 
@@ -63,6 +63,10 @@ pointers:pointers.c
 
 # program structs_and_pointers_to_them.
 structs_and_pointers_to_them:structs_and_pointers_to_them.c
+	$(CC) $(CFLAGS) $^ -o $@
+
+# program Heap-and-Stack-Memory-Allocation.
+Heap-and-Stack-Memory-Allocation: Heap-and-Stack-Memory-Allocation.c
 	$(CC) $(CFLAGS) $^ -o $@
 
 clean:
