@@ -11,7 +11,7 @@ void sort(int a[], int len) {
 	int h = 1;
 	while (h < len)
 		h = 3 * h + 1; // 1, 4, 13, 40, 121, ...
-	while (h >= 0) {
+	while (h > 0) {
 		for (i = h; i < len; i++) {
 			key = a[i];
 			j = i - h;
