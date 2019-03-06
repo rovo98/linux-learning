@@ -1,31 +1,28 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
-	// go through each string in argv
+    // go through each string in argv
 
-	int i = 0;
-	while (i < argc)
-	{
-		printf("arg %d: %s\n", i, argv[i]);
-		i++;
-	}
+    int i = 0;
+    while (i < argc) {
+        printf("arg %d: %s\n", i, argv[i]);
+        i++;
+    }
 
-	// Let's make our own array of strings
-	
-	char *states[] = {
-		"California", "Oregon",
-		"Washington", "Texas"
-	};
+    // Let's make our own array of strings
 
-	int num_states = 4;
-	i = 0;
-	while (i < num_states)
-	{
-		printf("state %d: %s\n", i, states[i]);
-		i++;
-	}
+    char* states[] = {
+        "California", "Oregon",
+        "Washington", "Texas"
+    };
 
-	return 0;
+    int num_states = 4;
+    i = 0;
+    while (i < num_states) {
+        printf("state %d: %s\n", i, states[i]);
+        i++;
+    }
 
+    return 0;
 }

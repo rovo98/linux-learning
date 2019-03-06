@@ -6,18 +6,15 @@
 * percent complete demo.
 ********************************************/
 
-
-int main(int argc, int *argv[])
+int main(int argc, char* argv[])
 {
-	int i;
+    int i;
 
-	for (i = 0; i <= 100; i++)
-	{
-		printf("Percent complete: %d\%\r", i);
-		fflush(stdout);
-		sleep(1);
-	}
-	printf("\n");
-	return 0;
+    for (i = 0; i <= 100; i++) {
+        printf("Percent complete: %d\%\r", i);
+        fflush(stdout);
+        sleep(1);
+    }
+    printf("\n");
+    return 0;
 }
-
